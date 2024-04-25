@@ -1,9 +1,15 @@
 body{
-    background: #cccccc;
+    
 }
 
 #banner{
     width: 100%;
+
+}
+
+.principal{
+
+    background: #cccccc;
 
 }
 
@@ -34,7 +40,7 @@ em strong{
 
 }
 
-.benefícios{
+.Benefícios{
     background: #FFFFFF;
     
 
