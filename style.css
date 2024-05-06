@@ -9,8 +9,10 @@ body{
 
 .principal{
 
-    background: #cccccc;
-
+    background: #F0C808;
+    border-radius: 10%;
+    text-align: center;
+    padding-bottom: 10%;
 }
 
 p {
@@ -41,7 +43,9 @@ em strong{
 }
 
 .Benefícios{
-    background: #FFFFFF;
-    
-
+    padding-bottom: 5%;
+    background: #086788;
+    border-radius: 10%;
+    position: absolute;
+    text-align: center;
 }
