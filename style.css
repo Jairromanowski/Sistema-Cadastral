@@ -2,17 +2,14 @@ body{
     
 }
 
-#banner{
-    width: 100%;
-
-}
-
 .principal{
 
-    background: #F0C808;
-    border-radius: 10%;
+    background: #FFF1D0;
+    border-radius: 10px;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+    width: 100%;
+    font-size: 25px;
 }
 
 p {
@@ -27,14 +24,13 @@ p {
 
 h1{
     text-align:center;
-    height: 150px;
+    height: 80px;
     border: 10px solid #0000;
-    padding-top: 10px;
-    margin: 40px;
+    margin: 30px;
 }
 
 em strong{
-    color: red;
+    color: #DD1C1A;;
 }
 
 .itens{
@@ -44,8 +40,16 @@ em strong{
 
 .Benefícios{
     padding-bottom: 5%;
-    background: #086788;
+    width: 25%;
+    background: #F0C808;
     border-radius: 10%;
     position: absolute;
     text-align: center;
+    font-size: 25px;
+}
+
+#modelo1{
+    padding-bottom: 20%;
+    float: center;
+  
 }
