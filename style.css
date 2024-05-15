@@ -1,55 +1,52 @@
-body{
-    
+body {
+	
+}
+
+#banner {
+	width:100%;
 }
 
 .principal{
+	background: #CCCCCC;
+	padding: 30px;
+}
 
-    background: #FFF1D0;
-    border-radius: 10px;
-    text-align: center;
-    padding-bottom: 5%;
-    width: 100%;
-    font-size: 25px;
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center
 }
 
 p {
-    text-align: center;
-}  
-
-#missão {
-      
-      font-size: 20px;
-
+	text-align: center;
 }
 
-h1{
-    text-align:center;
-    height: 80px;
-    border: 10px solid #0000;
-    margin: 30px;
+#missao {
+	font-size: 20px
 }
 
-em strong{
-    color: #DD1C1A;;
+em strong {
+	color: #FF0000;
 }
 
-.itens{
-    font-style: italic;
-
+.itens {
+	font-style: italic
 }
 
-.Benefícios{
-    padding-bottom: 5%;
-    width: 25%;
-    background: #F0C808;
-    border-radius: 10%;
-    position: absolute;
-    text-align: center;
-    font-size: 25px;
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
 }
 
-#modelo1{
-    padding-bottom: 20%;
-    float: center;
-  
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
+.imagembeneficios {
+	width: 50%;
 }
