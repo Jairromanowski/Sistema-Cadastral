@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midnight Pulse</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-    <div do cabeçalho>
-      <h1>Início</h1>
-      <h2>Lorem</h2>
-      <h3>Lorem</h3>
-      < 
-    </div>
-
+    <h1>Midnight pulse</h1>
+    <h2>Início</h2>
 
 </body>
 </html>
