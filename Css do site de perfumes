@@ -1,23 +1,38 @@
 body {
     background-color: #11091a;
+    height: 100%;
+    width: 100%;
     
     
 }
 header {
     background-color: #2f2f4d; 
     color: white; 
-    padding: 20px; 
-    text-align: center; 
-    display: flex
+    padding: 10px; 
+    height: 75px;
+    width: 95%;
+    display: flex;
+    border-radius: 10px;
+    margin-top:15px;
+    
 }
 
 h1 {
     color: rgb(214, 235, 235);
-    font-family: Impact;
     font-size: 55px;
+    margin-top: 0px;
+    
 
 }
 
-h2 {
-    color: #ffff;     
+ul {
+    color: #ffff;  
+    position: relative;
+    left: 30%;  
+    padding-top: 15px;
+    font-size:20px;
+ }
+
+ a {
+    color: antiquewhite;
  }
