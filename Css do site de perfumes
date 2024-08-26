@@ -1,38 +1,124 @@
-body {
+ html, body {
     background-color: #11091a;
-    height: 100%;
     width: 100%;
-    
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+    overflow-x:hidden; 
     
 }
 header {
-    background-color: #2f2f4d; 
-    color: white; 
-    padding: 10px; 
-    height: 75px;
-    width: 95%;
     display: flex;
-    border-radius: 10px;
-    margin-top:15px;
-    
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2f2f4d;
+    color: white;
+    padding: 6px;
+    height: 75px;
+    opacity: 80%;
+    z-index: 1000;
 }
 
-h1 {
-    color: rgb(214, 235, 235);
-    font-size: 55px;
-    margin-top: 0px;
-    
-
-}
-
-ul {
+nav {
     color: #ffff;  
     position: relative;
     left: 30%;  
     padding-top: 15px;
     font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #ffffff;
+      transition: width 0.5s ease;
+}
+
+
+
+    a:hover::after {
+      width: 100%;
+}
+
+
+a {
+    color: #ffffff;
+    padding: 0 8px;
+    position: relative;
  }
 
- a {
-    color: antiquewhite;
- }
+.no-underline {
+    text-decoration: none;
+}
+
+
+h1 {
+  color: #b460ec;
+  padding: 0 8px;
+  position: relative; /* Necessário para posicionar o pseudo-elemento, se for usado */
+  text-shadow: 0 0 5px #11091a; /* Define o brilho */
+  transition: text-shadow 0.3s ease; /* Transição suave para o efeito de brilho */
+}
+
+h1:hover {
+  text-shadow: 0 0 15px #e4e0e7; /* Intensifica o brilho ao passar o mouse */
+}
+
+h1 {
+    color:#b460ec;
+    font-size: 55px;
+    margin-top: 0px;
+    font-family: serif;
+    
+    opacity: 100%;
+}
+
+h2, h3, h4{
+    text-align:left;
+    top: 0%;
+    color: #b460ec;
+    font-family: serif;
+    font-size: 25px;
+}
+
+ul{
+  color:#e8d18e ;
+}
+
+.fundo {
+  top: 0;
+  left: 0;
+  border-radius: 0%;
+  display: block; /* Remove o espaço abaixo da imagem */
+  width: 100%; /* Define a largura da imagem como 100% do elemento pai */
+  height: auto;
+  
+  
+}
+
+footer {
+    color: #ffffff;
+    flex-direction: column; 
+    border-radius: 10px;
+    background-color: #5a5a5af6;
+    bottom: 0%;
+    padding: 15%;
+    
+}
+
+.instagram, .facebook, .gmail, .youtube, .twitter{
+  height: 50px;
+  width: 50px;
+  transition: opacity 0.3s;
+}
+
+.instagram:hover, .facebook:hover, .gmail:hover, .youtube:hover, .twitter:hover{
+  opacity: 0.7; 
+}
