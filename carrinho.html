@@ -10,28 +10,64 @@
     <header>
         <h1>Midnight Pulse</h1>
         <nav>
-            <a href="index.html" target="_blank" rel="external">Início</a>
-            <a href="produtos.html" target="_blank" rel="external">Produtos</a>
-            <a href="carrinho.html" target="_blank" rel="external">Carrinho</a>
-            <a href="paginaconfig.html" target="_blank" rel="external">Cadastre-se</a>
+            <a href="index.html" rel="external">Início</a>
+            <a href="produtos.html" rel="external">Produtos</a>
+            <a href="carrinho.html" rel="external">Carrinho</a>
+            <a href="cadastro.html" rel="external">Cadastre-se</a>
         </nav>
     </header>
 
     <main>
         <section id="carrinho">
             <h2>Seu Carrinho de Compras</h2>
-            <div class="carrinho-container">
-                <div class="item">
-                    <img src="/tmp/guest-cf6qh5/Downloads/homem perfume.jpeg" alt="Produto 1">
+            <div class="carrinho-container" id="carrinho-container">
+                <!-- Itens do carrinho serão carregados aqui pelo script -->
+            </div>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </section>
+    </main>
+    <script>
+        function carregarCarrinho() {
+            // Obtém o carrinho do localStorage ou inicializa um array vazio
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            const container = document.getElementById('carrinho-container');
+
+            // Limpa o container
+            container.innerHTML = '';
+
+            // Adiciona cada item ao carrinho na página
+            carrinho.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.classList.add('item');
+                div.innerHTML = `
+                    <img src="c:\Users\jairr\Downloads\homem perfume.jpeg" alt="${item.nome}">
                     <div class="item-info">
-                        <h3>Produto 1</h3>
-                        <p>Descrição do Produto 1. Este é um excelente produto que você deve considerar.</p>
-                        <p class="preco">R$99,90</p>
-                        <button class="remover-item">Remover</button>
+                        <h3>${item.nome}</h3>
+                        <p>Descrição do ${item.nome}.</p>
+                        <p class="preco">${item.preco}</p>
+                        <button class="remover-item" onclick="removerDoCarrinho(${index})">Remover</button>
                     </div>
-                </div>
-                <div class="item">
-                    <img src="/tmp/guest-cf6qh5/Downloads/perfume de homem frasco preto.jpg" alt="Produto 2">
-                    <div class="item-info">
-                        <h3>Produto 2</h3>
-                        <p>Descrição do Produto 2. Um produto incrível com várias funcionalidades.
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function removerDoCarrinho(index) {
+            // Obtém o carrinho do localStorage
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+            // Remove o item do carrinho
+            carrinho.splice(index, 1);
+
+            // Atualiza o localStorage com o novo carrinho
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+            // Recarrega a página para atualizar a lista de itens
+            carregarCarrinho();
+        }
+
+        // Carrega o carrinho ao iniciar a página
+        window.onload = carregarCarrinho;
+    </script>
+</body>
+</html>
