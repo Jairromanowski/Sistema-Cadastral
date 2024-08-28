@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Midnight Pulse</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <h1>Midnight Pulse</h1>
+        <nav>
+            <a href="index.html" rel="external" class="no-underline">Início</a>
+            <a href="produtos.html" rel="external" class="no-underline">Produtos</a>
+            <a href="carrinho.html" rel="external" class="no-underline">Carrinho</a>
+            <a href="cadastro.html" rel="external" class="no-underline">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="c:\Users\jairr\Downloads\fundobanner.jpg" alt="Imagem do perfume" class="fundo">
+
+        <div class="fundo-cadastro">
+            <div class="quadrado-texto-cadastro">
+                <h2>Cadastro</h2>
+                <form action="submit_cadastro.php" method="post">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-icons">
+            <img src="c:\Users\jairr\Downloads\instagram.png" class="instagram" alt="Instagram">
+            <img src="c:\Users\jairr\Downloads\facebook.png" class="facebook" alt="Facebook">
+            <img src="c:\Users\jairr\Downloads\youtube.png" class="youtube" alt="YouTube">
+            <img src="c:\Users\jairr\Downloads\gmail.png" class="gmail" alt="Gmail">
+            <img src="c:\Users\jairr\Downloads\twitter.png" class="twitter" alt="Twitter">
+        </div>
+    </footer>
+</body>
+</html>
