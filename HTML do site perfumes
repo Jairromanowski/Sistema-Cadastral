@@ -13,33 +13,45 @@
     <h1>Midnight pulse</h1>
       
    <nav>
-         <a href="file:///C:/Users/jairr/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20site/index.html", target="_blank" rel="external" class="no-underline" class="linha1">Ínicio</a>
+         <a href="index.html" rel="external" class="no-underline" class="linha1">Ínicio</a>
 
-         <a href="produtos.html" target="_blank" rel="external" class="no-underline">Produtos</a>
+         <a href="produtos.html"  rel="external" class="no-underline">Produtos</a>
 
-         <a href="carrinho.html" target="_blank" rel="external" class="no-underline">Carrinho</a>
+         <a href="carrinho.html" rel="external" class="no-underline">Carrinho</a>
 
-         <a href="paginaconfig.html" target="_blank" rel="external" class="no-underline">Cadastre-se</a>
+         <a href="cadastro.html" rel="external" class="no-underline">Cadastre-se</a>
 
    </nav>    
       
 </header>
   <main>
+    <img src="c:\Users\jairr\Downloads\fundobanner.jpg" alt="Imagem do perfume" class="fundo">
 
-    <img src="c:\Users\jairr\Downloads\IMG-20240823-WA0037.jpg" alt="Imagem do perfume" class="fundo">
 
-    <h2>Missão: "Na Midnight Pulse, nossa missão é capturar e compartilhar a essência das experiências noturnas mais fascinantes e impactantes, oferecendo aos nossos leitores uma plataforma rica em cultura, entretenimento e conexões significativas."</h2>
-    <h3>Visão: "Nosso objetivo é transformar a forma como as pessoas vivenciam a noite, tornando-nos o destino primordial para aqueles que buscam aventuras noturnas, insights culturais e um senso de comunidade que transcende os limites do cotidiano."</h3>
-    <h4>Valores:</h4>
+  <div class="fundo-missão">
+    <div class="quadrado-texto">
+        <h2>Missão: "Na Midnight Pulse, nossa missão é capturar e compartilhar a essência das experiências noturnas mais fascinantes e impactantes, oferecendo aos nossos leitores uma plataforma rica em cultura, entretenimento e conexões significativas."</h2>
+        <h3>Visão: "Nosso objetivo é transformar a forma como as pessoas vivenciam a noite, tornando-nos o destino primordial para aqueles que buscam aventuras noturnas, insights culturais e um senso de comunidade que transcende os limites do cotidiano."</h3>
+      </div>
+      <div class="imagem-base">
+        <img src="c:\Users\jairr\Downloads\perfume carvão.webp">
+       </div>
+  </div>  
     
+  <div class="fundo-valores">
+    <div class="quadrado-texto2">
+    <h4>Valores:</h4>
     <ul>
-       <li>Inovação: Estamos sempre em busca de novas tendências e ideias que reimaginam o que a noite pode oferecer, desafiando o status quo com criatividade e originalidade.</li>
+       <li>Inovação: Estamos sempre em busca de novas tendências e ideias que reimaginam o que a noite pode oferecer, desafiando o status com criatividade e originalidade.</li>
        <li>Conexão: Promovemos a construção de laços entre indivíduos que compartilham um amor pela vida noturna, criando uma rede de pessoas que se entendem e se apoiam.</li>
        <li>Inclusão: Celebramos a diversidade de perspectivas e experiências, garantindo que todos se sintam representados e valorizados em nossa plataforma.</li>
        <li>Excelência: Comprometemo-nos a oferecer conteúdo de alta qualidade que não apenas informa, mas também inspira e engaja nossa audiência.</li>
        <li>Responsabilidade: Encorajamos práticas que respeitam a ética e a responsabilidade social, promovendo um ambiente noturno que seja seguro, sustentável e positivo para todos.</li>
     </ul>
-  
+    </div>
+  </div>
+
+
   </main>
 
 <footer>
